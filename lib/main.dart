@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:budget_app/widgets/transaction_list.dart';
 import 'package:flutter/material.dart';
+// import 'package:flutter/services.dart';
 
 import './widgets/transaction_list.dart';
 import './widgets/new_transaction.dart';
@@ -10,6 +11,11 @@ import './widgets/chart.dart';
 import './models/transaction.dart';
 
 void main() {
+  // prevent from orientation: landscape
+  // WidgetsFlutterBinding.ensureInitialized();
+  // SystemChrome.setPreferredOrientations(
+  //   [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp],
+  // );
   runApp(MyApp());
 }
 
